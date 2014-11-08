@@ -1,0 +1,23 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+	<CheckBoxPreference
+        android:key="pref_vol"
+        android:title="@string/pref_vol"
+        android:summary="@string/pref_vol_summ"
+        android:defaultValue="false" />
+	<CheckBoxPreference
+        android:key="pref_yield"
+        android:title="@string/pref_yield"
+        android:summary="@string/pref_yield_summ"
+        android:defaultValue="false" />
+	<CheckBoxPreference
+        android:key="pref_change"
+        android:title="@string/pref_change"
+        android:summary="@string/pref_change_summ"
+        android:defaultValue="false" />
+	<CheckBoxPreference
+        android:key="pref_perc_change"
+        android:title="@string/pref_perc_change"
+        android:summary="@string/pref_perc_summ"
+        android:defaultValue="false" />
+
+</PreferenceScreen>

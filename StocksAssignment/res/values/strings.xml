@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">StocksAssignment</string>
+    <string name="hello_world">Fat butts.</string>
+    <string name="action_settings">Settings</string>
+    <string name="price">Price</string>
+
+    <string-array name="company">
+        <item>GOOG</item>
+        <item>AAPL</item>
+        <item>BA</item>
+        <item>MSFT</item>
+    </string-array>
+
+    <string name="title_activity_pref">PrefActivity</string>
+    <string name="pref_yield">Yield</string>
+    <string name="pref_yield_summ">Show percent yield</string>
+    <string name="pref_vol">Volume</string>
+    <string name="pref_vol_summ">Show volume of stock</string>
+    <string name="pref_change">Today\'s change</string>
+    <string name="pref_change_summ">Show today\'s change</string>
+    <string name="pref_perc_change">Today\'s % change</string>
+    <string name="pref_perc_summ">Show today\'s percent change</string>
+
+</resources>

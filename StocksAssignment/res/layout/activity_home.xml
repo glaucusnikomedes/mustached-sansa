@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.app.stocksassignment.Home" >
+
+    <Spinner
+        android:id="@+id/ticker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        />
+    <Button
+        android:id="@+id/update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ticker"
+        android:layout_margin="5dp"
+        android:text="Get Stock"
+        />
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/update"
+        android:padding="5sp"
+        android:layout_margin="5dp"
+        android:text="@string/price"/>
+    <TextView
+        android:id="@+id/vol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/update"
+        android:layout_toRightOf="@id/price"
+        android:padding="5sp"
+        android:layout_margin="5dp"
+        android:visibility="invisible"
+        android:text="Volume"/>
+    <TextView
+        android:id="@+id/yield"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/update"
+        android:layout_toRightOf="@id/vol"
+        android:padding="5sp"
+        android:layout_margin="5dp"
+        android:visibility="invisible"
+        android:text="Yield"/>
+    <TextView
+        android:id="@+id/change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/update"
+        android:layout_toRightOf="@id/yield"
+        android:padding="5sp"
+        android:layout_margin="5dp"
+        android:visibility="invisible"
+        android:text="Today's Change"/>
+    <TextView
+        android:id="@+id/pchange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/update"
+        android:layout_toRightOf="@id/change"
+        android:padding="5sp"
+        android:layout_margin="5dp"
+        android:visibility="invisible"
+        android:text="Today's % change"/>
+    
+
+</RelativeLayout>
