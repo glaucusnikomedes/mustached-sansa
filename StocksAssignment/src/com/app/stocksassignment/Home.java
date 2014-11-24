@@ -5,7 +5,7 @@ package com.app.stocksassignment;
 
 import com.app.stocksassignment.StockService.StockBinder;
 
-import android.support.v7.app.ActionBarActivity;
+import android.app.Activity;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
@@ -27,7 +27,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.preference.PreferenceManager;
 
-public class Home extends ActionBarActivity {
+public class Home extends Activity {
 	private String chosen;
 	private Stock stock;
 	private TextView txt;
