@@ -1,0 +1,118 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+	<RelativeLayout
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content" >
+		<ImageView 
+		    android:id="@+id/img"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_centerHorizontal="true"
+		    android:layout_marginTop="10dp"
+		    android:scaleType="center"
+		    android:contentDescription="species image"
+		    />
+
+		<TableLayout
+		    android:id="@+id/grid"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_below="@id/img"
+		    android:layout_margin="10dp"
+		    android:columnCount="2"
+		    android:shrinkColumns="1"
+		    android:orientation="horizontal" >
+			<TableRow 
+			    >
+			    <TextView
+			        android:id="@+id/scilbl"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:padding="2sp" 
+			        android:text="Scientific name:"
+			        />
+			    <TextView
+			        android:id="@+id/sci"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:padding="2sp" 
+			        android:text="N/A"
+			        />
+			</TableRow>
+		    <TableRow 
+		        >
+		        <TextView
+			        android:id="@+id/taxlbl"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:padding="2sp" 
+			        android:text="Taxon:"/>
+			    <TextView
+			        android:id="@+id/tax"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:padding="2sp" 
+			        android:text="N/A"
+			        />
+		    </TableRow>
+			<TableRow >
+			    <TextView
+			        android:id="@+id/simlbl"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:padding="2sp" 
+			        android:text="Similar species:"/>
+			    <TextView
+			        android:id="@+id/sim"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:padding="2sp" 
+			        android:text="N/A"
+			        />
+			</TableRow>
+			<TableRow >
+			    <TextView
+			        android:id="@+id/hablbl"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:padding="2sp" 
+			        android:text="Found in:"/>
+			    <TextView
+			        android:id="@+id/habitat"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:padding="2sp" 
+			        android:text="N/A"
+			        />
+			</TableRow>
+			<TableRow >
+			    <TextView
+			        android:id="@+id/descrlbl"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:padding="2sp" 
+			        android:text="Description:"/>
+			    <TextView
+			        android:id="@+id/description"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_margin="5dp"
+			        android:padding="2sp" 
+			        android:text="N/A"
+			        />
+			</TableRow>
+		</TableLayout>
+	</RelativeLayout>
+</ScrollView>

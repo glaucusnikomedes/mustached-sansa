@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="app_name">LocalArthropodReference</string>
+    <string name="app_name">BugsSoCal</string>
     <string name="title_activity_home">Home</string>
     <string name="hello_world">Hello world!</string>
+    <string name="title_activity_display_list">DisplayList</string>
+    <string name="title_activity_species">Species</string>
+    <string name="action_settings">Settings</string>
+    <string-array name="habitats">
+        <item >coastal sage scrub</item>
+        <item >desert</item>
+        <item >chaparral</item>
+        <item >riparian</item>
+    </string-array>
+    <string-array name="taxa">
+        <item >arachnida</item>
+        <item >lepidoptera</item>
+        <item >orthoptera</item>
+        <item >blattodea</item>
+        <item >chilopoda</item>
+        <item >diplopoda</item>
+        <item >hymenoptera</item>
+        <item >hemiptera</item>
+        <item >coleoptera</item>
+    </string-array>
 
 </resources>

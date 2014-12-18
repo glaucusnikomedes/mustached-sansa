@@ -2,29 +2,45 @@ package com.example.localarthropodreference;
 
 public class Bug {
 	private long id;
+	private int img;
 	private String comName;
 	private String sciName;
-	private String ident;
 	private String similar;
-	private String size;
-	private String habitat;
-	private String status; 
+	private String descr;
+	private String[] habitat;
+	private String taxon;
+	
+	public static String strSeparator = "__|__";
+	public static String convertArrayToString(String[] array){
+	    String str = "";
+	    for (int i = 0;i<array.length; i++) {
+	        str = str+array[i];
+	        // Do not append comma at the end of last element
+	        if(i<array.length-1){
+	            str = str+strSeparator;
+	        }
+	    }
+	    return str;
+	}
+	public static String[] convertStringToArray(String str){
+	    String[] arr = str.split(strSeparator);
+	    return arr;
+	}
 	
 	public Bug() {
 		// TODO Auto-generated constructor stub
 	}
 	
-	public Bug(long id, String comName, String sciName, String ident, String similar,
-			String size, String habitat, String status) {
+	public Bug(long id,String img, String comName, String sciName, String ident, String similar,
+			String descr, String habitat, String taxon) {
 		super();
 		this.id = id;
 		this.comName = comName;
 		this.sciName = sciName;
-		this.ident = ident;
 		this.similar = similar;
-		this.size = size;
-		this.habitat = habitat;
-		this.status = status;
+		this.descr = descr;
+		this.habitat = convertStringToArray(habitat);
+		this.taxon = taxon;
 	}
 
 	public long getId() {
@@ -33,6 +49,14 @@ public class Bug {
 
 	public void setId(long id) {
 		this.id = id;
+	}
+
+	public int getImg() {
+		return img;
+	}
+
+	public void setImg(int img) {
+		this.img = img;
 	}
 
 	public String getComName() {
@@ -51,14 +75,6 @@ public class Bug {
 		this.sciName = sciName;
 	}
 
-	public String getIdent() {
-		return ident;
-	}
-
-	public void setIdent(String ident) {
-		this.ident = ident;
-	}
-
 	public String getSimilar() {
 		return similar;
 	}
@@ -67,28 +83,28 @@ public class Bug {
 		this.similar = similar;
 	}
 
-	public String getSize() {
-		return size;
+	public String getDescr() {
+		return descr;
 	}
 
-	public void setSize(String size) {
-		this.size = size;
+	public void setDescr(String descr) {
+		this.descr = descr;
 	}
 
-	public String getHabitat() {
+	public String[] getHabitat() {
 		return habitat;
 	}
 
-	public void setHabitat(String habitat) {
+	public void setHabitat(String[] habitat) {
 		this.habitat = habitat;
 	}
 
-	public String getStatus() {
-		return status;
+	public String getTaxon() {
+		return taxon;
 	}
 
-	public void setStatus(String status) {
-		this.status = status;
+	public void setTaxon(String taxon) {
+		this.taxon = taxon;
 	}
 
 }

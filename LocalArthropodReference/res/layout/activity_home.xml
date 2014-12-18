@@ -2,8 +2,49 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="${relativePackage}.${activityClass}" >
-
-    
+    tools:context="${relativePackage}.${activityClass}"
+     >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/home"
+        android:scaleType="centerCrop"
+        />
+	<LinearLayout 
+	    android:id="@+id/bottom"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_alignParentBottom="true"
+	    android:layout_margin="5dp"
+	    android:gravity="center"
+	    >
+	    <Button
+		    android:id="@+id/btn1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="5dp"
+		    android:background="@drawable/back"
+		    android:text="Search"
+		    android:onClick="onClick" />
+	    <Button
+		    android:id="@+id/btn2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="5dp"
+		    android:background="@drawable/back"
+		    android:text="Habitat Type"
+		    android:onClick="onClick" />
+	    <Button
+		    android:id="@+id/btn3"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="5dp"
+		    android:background="@drawable/back"
+		    android:text="Taxa"
+		    android:onClick="onClick" />
+	    
+	</LinearLayout>
+	
 
 </RelativeLayout>

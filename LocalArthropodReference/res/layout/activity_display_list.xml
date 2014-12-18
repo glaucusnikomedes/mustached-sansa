@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+    <LinearLayout 
+        android:id="@+id/searchlinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <EditText
+		    android:id="@+id/search"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_margin="2dp"
+		    android:layout_weight="5"
+		    android:hint="Enter common name..."
+		    android:maxLines="1"
+		    android:maxLength="50"
+		    />
+        <Button
+            android:id="@+id/searchbtn"
+            android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:layout_margin="4dp"
+		    android:text="Search"
+		    android:background="@drawable/back"
+		    android:onClick="onClick"
+            />
+    </LinearLayout>
+	
+    <ListView
+        android:id="@id/android:list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="2dp"
+        android:layout_below="@id/searchlinear"
+        />
+
+</RelativeLayout>
